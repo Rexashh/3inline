@@ -6,7 +6,7 @@
         "file",
         "sharing"
     ],
-    "repository": "https://github.com/syahrizalemano/3inline",
+    "repository": "https://github.com/syahrizalemano/3inlinesubs",
     "logo": "https://telegra.ph/file/9960bbaeab7c421455491.jpg",
     "env": {
         "TG_BOT_TOKEN": {
