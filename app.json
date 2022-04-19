@@ -19,7 +19,7 @@
         },
         "OWNER_ID": {
             "description": "Masukan User ID Telegram untuk Owner BOT",
-            "value": "rahkissyou"
+            "value": ""
         },
         "ADMINS": {
             "description": "Masukan User ID untuk mendapatkan hak Admin BOT [Hanya dapat membuat link]",
