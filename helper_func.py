@@ -8,7 +8,7 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 
-from config import ADMINS, FORCE_SUB1, FORCE_SUB2, FORCE_SUB3, FORCE_SUB4
+from config import ADMINS, FORCE_SUB1, FORCE_SUB2, FORCE_SUB3
 
 
 async def is_subscribed(filter, client, update):
