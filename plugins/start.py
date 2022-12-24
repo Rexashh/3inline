@@ -136,19 +136,19 @@ async def start_command(client: Client, message: Message):
 @Bot.on_message(filters.command("start") & filters.private)
 async def not_joined(client: Client, message: Message):
     buttons = [
-            [InlineKeyboardButton("👑𝐎𝐖𝐍𝐄𝐑👑", url=f"https://t.me/{OWNER}")],
+            [InlineKeyboardButton("owner", url=f"https://t.me/{OWNER}")],
             [
-                InlineKeyboardButton("📎 𝘼𝙎𝙐𝙋𝘼𝙉-1", url=client.invitelink),
-                InlineKeyboardButton("📎 𝘼𝙎𝙐𝙋𝘼𝙉-2", url=client.invitelink2),
+                InlineKeyboardButton("Join channel", url=client.invitelink),
+                InlineKeyboardButton("Join channel", url=client.invitelink2),
             ],
             [
-                InlineKeyboardButton("📎 𝘼𝙎𝙐𝙋𝘼𝙉-3", url=client.invitelink3),
+                InlineKeyboardButton("Join Group", url=client.invitelink3),
             ],
         ]
     try:
         buttons.append(
         [
-            InlineKeyboardButton("↻𝐓𝐑𝐘 𝐀𝐆𝐀𝐈𝐍↻", url=f"https://t.me/{client.username}?start={message.command[1]}",
+            InlineKeyboardButton("↻Coba Lagi↻", url=f"https://t.me/{client.username}?start={message.command[1]}",
             )
          ]
      )
