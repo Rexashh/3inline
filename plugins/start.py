@@ -113,7 +113,7 @@ async def start_command(client: Client, message: Message):
                 pass
     else:
         buttons = [
-            [InlineKeyboardButton("MANAGE BY", url=f"https://t.me/onlybionn")]
+            [InlineKeyboardButton("ᴍᴀɴᴀɢᴇ ʙʏ", url=f"https://t.me/onlybionn")]
         ]
         await message.reply_text(
             text=START_MSG.format(
@@ -136,19 +136,19 @@ async def start_command(client: Client, message: Message):
 @Bot.on_message(filters.command("start") & filters.private)
 async def not_joined(client: Client, message: Message):
     buttons = [
-            [InlineKeyboardButton("owner", url=f"https://t.me/{OWNER}")],
+            [InlineKeyboardButton("ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER}")],
             [
-                InlineKeyboardButton("Join channel", url=client.invitelink),
-                InlineKeyboardButton("Join channel", url=client.invitelink2),
+                InlineKeyboardButton("ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
+                InlineKeyboardButton("ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink2),
             ],
             [
-                InlineKeyboardButton("Join Group", url=client.invitelink3),
+                InlineKeyboardButton("ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=client.invitelink3),
             ],
         ]
     try:
         buttons.append(
         [
-            InlineKeyboardButton("↻Coba Lagi↻", url=f"https://t.me/{client.username}?start={message.command[1]}",
+            InlineKeyboardButton("↻ᴄᴏʙᴀ ʟᴀɢɪ↻", url=f"https://t.me/{client.username}?start={message.command[1]}",
             )
          ]
      )
