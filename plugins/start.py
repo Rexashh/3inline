@@ -113,7 +113,7 @@ async def start_command(client: Client, message: Message):
                 pass
     else:
         buttons = [
-            [InlineKeyboardButton("MANAGE BY", url=f"https://t.me/ezzraez")]
+            [InlineKeyboardButton("MANAGE BY", url=f"https://t.me/onlybionn")]
         ]
         await message.reply_text(
             text=START_MSG.format(
